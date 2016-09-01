@@ -1,5 +1,6 @@
 package introducaojava.visao;
 
+import introducaojava.controle.EquipamentoControle;
 import introducaojava.controle.ManutencaoControle;
 import introducaojava.modelo.Equipamento;
 import java.text.SimpleDateFormat;
@@ -45,7 +46,7 @@ public class ManutencaoVisao {
             }
         } while (true);
         
-        ManutencaoControle.receberDadosNovaManutencao(equip, descricao, data, valor);
+        EquipamentoControle.receberDadosNovaManutencao(equip, ManutencaoControle.receberDadosNovaManutencao(descricao, data, valor));
         
         Menu.exibirMenu();
     }

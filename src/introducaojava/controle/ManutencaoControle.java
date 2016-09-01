@@ -9,12 +9,11 @@ import java.util.Date;
  * @author Douglas
  */
 public class ManutencaoControle {
-    public static void receberDadosNovaManutencao(Equipamento equip, String descricao, Date data,  float valor){
+    public static Manutencao receberDadosNovaManutencao(String descricao, Date data,  float valor){
         Manutencao man = new Manutencao();
         man.setDescricao(descricao);
         man.setData(data);
         man.setValor(valor);
-        
-        equip.adicionarManutencao(man);
+        return man;
     }
 }

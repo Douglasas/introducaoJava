@@ -1,6 +1,7 @@
 package introducaojava.controle;
 
 import introducaojava.modelo.Equipamento;
+import introducaojava.modelo.Manutencao;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -17,6 +18,10 @@ public class EquipamentoControle {
         equip.setDataTerminoGarantia(dataTerminoGarantia);
         equip.setValor(valor);
         equip.salvar();
+    }
+    
+    public static void receberDadosNovaManutencao(Equipamento equip, Manutencao man){
+        equip.adicionarManutencao(man);
     }
 	
     public static ArrayList<Equipamento> obterListaEquipamentos(){
