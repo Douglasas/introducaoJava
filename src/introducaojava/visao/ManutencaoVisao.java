@@ -35,7 +35,7 @@ public class ManutencaoVisao {
             }
         } while (true);
         
-        System.out.print("Informe o valor: ");
+        System.out.print("Informe o valor (R$): ");
         do {
             try {
                 valor = Float.parseFloat(in.nextLine());
