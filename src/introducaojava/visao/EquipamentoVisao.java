@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package introducaojava.visao;
 
 import introducaojava.controle.EquipamentoControle;
@@ -72,14 +67,14 @@ public class EquipamentoVisao {
     }
     public static void exibirListagemEquipamentos(){
             System.out.println("=== TELA DE LISTAGEM DE EQUIPAMENTOS ===");
-            System.out.println("NOME\tNº PATRIMONIO\tNUM MANUTENCOES");
+            System.out.println("NOME\tNº PATRIMONIO\tNUM MANUTENCOES\tTOT VALOR MANUTENCOES");
             ArrayList<Equipamento> lista = EquipamentoControle.obterListaEquipamentos();
             for (Equipamento eq : lista) {
-                System.out.println(eq.getNome() + "\t" + eq.getPatrimonio() + "\t" + eq.getListaManutencoes().size());
+                System.out.println(eq.getNome() + "\t" + eq.getPatrimonio() + "\t" + eq.getListaManutencoes().size() + "\tR$" + eq.getTotalGastoManutencoes());
             }
             System.out.println("O que voce deseja fazer?");
             System.out.println("0. Voltar ao menu");
-            System.out.println("1. Numero do patrimonio: Cadastrar manutenção para o equipamento");                
+            System.out.println("Nº patrimonio. Cadastrar manutenção para o equipamento");             
             Scanner in = new Scanner(System.in);
             String valorDigitado = in.nextLine();
             if (valorDigitado.equals("0")) {
@@ -87,9 +82,10 @@ public class EquipamentoVisao {
             } else {
                 Equipamento equip = EquipamentoControle.obterEquipamentoPorNumPatrimonio(valorDigitado);
                 if (equip == null) {
-                    System.out.println("Equipamento nao encontrado");
+                    System.out.println("Equipamento nao encontrado, tente novamente");
+                    EquipamentoVisao.exibirListagemEquipamentos();
                 } else {
-                    
+                    ManutencaoVisao.exibirFormularioCadastroManutencao(equip);
                 }
             }
     }

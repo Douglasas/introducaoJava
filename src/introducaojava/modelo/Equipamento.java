@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package introducaojava.modelo;
 
 import introducaojava.MeioArmazenamento;
@@ -35,6 +30,18 @@ public class Equipamento {
     }
 
     public ArrayList<Manutencao> getListaManutencoes(){ return this.listaManutencoes; }
+    
+    public void adicionarManutencao(Manutencao man){
+        this.getListaManutencoes().add(man);
+    }
+    
+    public float getTotalGastoManutencoes(){
+        float total = 0;
+        for (Manutencao man : this.listaManutencoes){
+            total += man.getValor();
+        }
+        return total;
+    }
     
     public String getPatrimonio() { return patrimonio; }
     public void setPatrimonio(String patrimonio) { this.patrimonio = patrimonio; }
