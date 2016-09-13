@@ -1,6 +1,5 @@
 package introducaojava.modelo;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**
