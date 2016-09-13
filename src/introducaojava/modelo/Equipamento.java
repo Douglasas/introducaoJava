@@ -1,7 +1,5 @@
 package introducaojava.modelo;
 
-import introducaojava.MeioArmazenamento;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -9,28 +7,13 @@ import java.util.Date;
  *
  * @author Douglas
  */
-public class Equipamento implements Serializable {
+public class Equipamento {
     private String nome;
     private String patrimonio;
     private Date dataAquisicao;
     private Date dataTerminoGarantia;
     private float valor;
     private ArrayList<Manutencao> listaManutencoes = new ArrayList<>();
-
-    public static ArrayList<Equipamento> obterLista(){
-            return MeioArmazenamento.EQUIPAMENTOS;
-    }
-    
-    public static Equipamento obterPeloNumero(String numeroPatrimonio) {
-        for (Equipamento equip : Equipamento.obterLista()){
-            if (equip.getPatrimonio().equals(numeroPatrimonio)){
-                return equip;
-            }
-        }
-        return null;
-    }
-
-    public ArrayList<Manutencao> getListaManutencoes(){ return this.listaManutencoes; }
     
     public void adicionarManutencao(Manutencao man){
         this.getListaManutencoes().add(man);
@@ -43,6 +26,8 @@ public class Equipamento implements Serializable {
         }
         return total;
     }
+    
+    public ArrayList<Manutencao> getListaManutencoes(){ return this.listaManutencoes; }
     
     public String getPatrimonio() { return patrimonio; }
     public void setPatrimonio(String patrimonio) { this.patrimonio = patrimonio; }
@@ -58,18 +43,4 @@ public class Equipamento implements Serializable {
 
     public float getValor() { return valor; }
     public void setValor(float valor) { this.valor = valor; }
-
-    public void salvar() {
-        MeioArmazenamento.EQUIPAMENTOS.add(this);
-    }
-    
-    @Override
-    public String toString(){
-        return "Nome: "+nome
-                +" Patrimonio: "+patrimonio
-                +" DataAquisicao: "+dataAquisicao
-                +" DataGarantia: "+dataTerminoGarantia
-                +" Valor: "+valor
-                +" Manutencoes: "+listaManutencoes;
-    }
 }

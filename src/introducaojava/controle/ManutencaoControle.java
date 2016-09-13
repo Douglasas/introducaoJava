@@ -1,6 +1,5 @@
 package introducaojava.controle;
 
-import introducaojava.modelo.Equipamento;
 import introducaojava.modelo.Manutencao;
 import java.util.Date;
 

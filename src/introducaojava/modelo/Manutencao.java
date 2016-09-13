@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * @author Douglas
  */
-public class Manutencao implements Serializable {
+public class Manutencao {
     private String descricao;
     private Date data;
     private float valor;
@@ -53,12 +53,5 @@ public class Manutencao implements Serializable {
      */
     public void setValor(float valor) {
         this.valor = valor;
-    }
-    
-    @Override
-    public String toString(){
-        return "Descricao: "+descricao
-                +" Data: "+data
-                +" Valor: "+valor;
     }
 }
