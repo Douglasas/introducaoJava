@@ -1,6 +1,7 @@
 package introducaojava.modelo;
 
 import introducaojava.MeioArmazenamento;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -8,7 +9,7 @@ import java.util.Date;
  *
  * @author Douglas
  */
-public class Equipamento {
+public class Equipamento implements Serializable {
     private String nome;
     private String patrimonio;
     private Date dataAquisicao;
@@ -60,5 +61,15 @@ public class Equipamento {
 
     public void salvar() {
         MeioArmazenamento.EQUIPAMENTOS.add(this);
+    }
+    
+    @Override
+    public String toString(){
+        return "Nome: "+nome
+                +" Patrimonio: "+patrimonio
+                +" DataAquisicao: "+dataAquisicao
+                +" DataGarantia: "+dataTerminoGarantia
+                +" Valor: "+valor
+                +" Manutencoes: "+listaManutencoes;
     }
 }

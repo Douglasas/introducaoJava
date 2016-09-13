@@ -63,7 +63,6 @@ public class EquipamentoVisao {
         } while (true);
         
         EquipamentoControle.receberDadosCadastroEquipamento(nome, patrimonio, dataAquisicao, dataTerminoGarantia, valor);
-        Menu.exibirMenu();
     }
     public static void exibirListagemEquipamentos(){
             System.out.println("=== TELA DE LISTAGEM DE EQUIPAMENTOS ===");
@@ -77,9 +76,7 @@ public class EquipamentoVisao {
             System.out.println("Nº patrimonio. Cadastrar manutenção para o equipamento");             
             Scanner in = new Scanner(System.in);
             String valorDigitado = in.nextLine();
-            if (valorDigitado.equals("0")) {
-                Menu.exibirMenu();
-            } else {
+            if (!valorDigitado.equals("0")) {
                 Equipamento equip = EquipamentoControle.obterEquipamentoPorNumPatrimonio(valorDigitado);
                 if (equip == null) {
                     System.out.println("Equipamento nao encontrado, tente novamente");

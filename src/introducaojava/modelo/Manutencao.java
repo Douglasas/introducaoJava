@@ -1,11 +1,12 @@
 package introducaojava.modelo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * @author Douglas
  */
-public class Manutencao {
+public class Manutencao implements Serializable {
     private String descricao;
     private Date data;
     private float valor;
@@ -52,5 +53,12 @@ public class Manutencao {
      */
     public void setValor(float valor) {
         this.valor = valor;
+    }
+    
+    @Override
+    public String toString(){
+        return "Descricao: "+descricao
+                +" Data: "+data
+                +" Valor: "+valor;
     }
 }
