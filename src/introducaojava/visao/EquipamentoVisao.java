@@ -2,16 +2,19 @@ package introducaojava.visao;
 
 import introducaojava.controle.EquipamentoControle;
 import introducaojava.modelo.Equipamento;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.ResourceBundle;
 import java.util.Scanner;
+import javafx.fxml.Initializable;
 
 /**
  *
  * @author Douglas
  */
-public class EquipamentoVisao {
+public class EquipamentoVisao implements Initializable {    
     public static void exibirFormularioCadastroEquipamento(){
         System.out.println("==== TELA CADASTRO DE EQUIPAMENTO ====");
 
@@ -85,5 +88,9 @@ public class EquipamentoVisao {
                 ManutencaoVisao.exibirFormularioCadastroManutencao(equip);
             }
         }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
     }
 }

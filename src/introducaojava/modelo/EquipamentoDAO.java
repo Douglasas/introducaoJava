@@ -61,7 +61,8 @@ public class EquipamentoDAO {
                         + dat.format(eq.getDataAquisicao()) +";"
                         + dat.format(eq.getDataTerminoGarantia()) +";"
                         + eq.getValor() +";"
-                        + eq.getListaManutencoes().toString()+System.getProperty("line.separator");
+                        + eq.getListaManutencoes().toString()
+                        + System.getProperty("line.separator");
         try {
             Files.write(arquivo, equip.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND );
         } catch (IOException ex) {

@@ -48,6 +48,6 @@ public class ManutencaoVisao {
         
         EquipamentoControle.receberDadosNovaManutencao(equip, ManutencaoControle.receberDadosNovaManutencao(descricao, data, valor));
         
-        Menu.exibirMenu();
+        //Menu.exibirMenu();
     }
 }
