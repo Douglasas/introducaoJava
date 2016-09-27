@@ -23,7 +23,7 @@ public class Principal extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Pane principal = FXMLLoader.load( getClass().getResource("visao/menu.fxml"));
+        Pane principal = FXMLLoader.load( getClass().getResource("/introducaoJava/visao/menu.fxml"));
         Scene scene = new Scene(principal);
         stage.setScene(scene);
         stage.show();

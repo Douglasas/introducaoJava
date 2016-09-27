@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducaojava.visao.ManutencaoVisao">
+   <children>
+      <Label layoutX="186.0" layoutY="14.0" text="Nova Manutenção">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="50.0" text="Equipamento:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="80.0" text="Data:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="110.0" text="Valor (R$):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="140.0" text="Descrição:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
+      <DatePicker fx:id="campoData" layoutX="250.0" layoutY="78.0" prefWidth="200.0" />
+      <TextArea fx:id="txtDescricao" layoutX="43.0" layoutY="160.0" prefHeight="62.0" prefWidth="407.0" />
+      <Button layoutX="393.0" layoutY="232.0" mnemonicParsing="false" onAction="#salvar" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="314.0" layoutY="232.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbxEquipamentos" layoutX="250.0" layoutY="48.0" prefWidth="200.0" />
+   </children>
+</Pane>

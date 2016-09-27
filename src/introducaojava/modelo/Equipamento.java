@@ -15,8 +15,18 @@ public class Equipamento {
     private float valor;
     private ArrayList<Manutencao> listaManutencoes = new ArrayList<>();
     
+    @Override
+    public String toString(){
+        return this.nome + " - " + this.patrimonio;
+    }
+    
     public void adicionarManutencao(Manutencao man){
-        this.getListaManutencoes().add(man);
+        this.listaManutencoes.add(man);
+        ManutencaoDAO.salvar(this.listaManutencoes, this.patrimonio);
+    }
+    
+    public void setListaManutencoes(ArrayList<Manutencao> listaManutencoes){
+        this.listaManutencoes = listaManutencoes;
     }
     
     public float getTotalGastoManutencoes(){

@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/MeioArmazenamento.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/visao/EquipamentoVisao.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/Principal.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/modelo/Manutencao.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/controle/EquipamentoControle.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/controle/ManutencaoControle.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/visao/Menu.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/visao/ManutencaoVisao.java</file>
-            <file>file:/C:/Users/5932432/Desktop/2/introducaoJava/src/introducaojava/modelo/Equipamento.java</file>
+            <file>file:/C:/Users/dougl/Documents/GitHub/introducaoJava/src/introducaojava/modelo/EquipamentoDAO.java</file>
+            <file>file:/C:/Users/dougl/Documents/GitHub/introducaoJava/src/introducaojava/visao/EquipamentoVisao.java</file>
+            <file>file:/C:/Users/dougl/Documents/GitHub/introducaoJava/src/introducaojava/visao/ManutencaoVisao.java</file>
+            <file>file:/C:/Users/dougl/Documents/GitHub/introducaoJava/src/introducaojava/Principal.java</file>
+            <file>file:/C:/Users/dougl/Documents/GitHub/introducaoJava/src/introducaojava/visao/Menu.java</file>
         </group>
     </open-files>
 </project-private>

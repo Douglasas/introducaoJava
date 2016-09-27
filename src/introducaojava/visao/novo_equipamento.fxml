@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducaojava.visao.EquipamentoVisao">
    <children>
-      <Label layoutX="180.0" layoutY="31.0" text="Novo Equipamento">
+      <Label layoutX="186.0" layoutY="14.0" text="Novo Equipamento">
          <font>
-            <Font size="28.0" />
+            <Font size="15.0" />
          </font>
       </Label>
+      <Label layoutX="43.0" layoutY="50.0" text="Nome: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="80.0" text="Identificação patrimiônio:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="110.0" text="Valor (R$):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="140.0" text="Data aquisição:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="170.0" text="Data término garantia:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="377.0" layoutY="219.0" mnemonicParsing="false" onAction="#salvarEquipamento" prefHeight="30.0" prefWidth="73.0" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="294.0" layoutY="219.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="campoNome" layoutX="250.0" layoutY="48.0" minHeight="-Infinity" prefWidth="200.0" />
+      <TextField fx:id="campoId" layoutX="250.0" layoutY="78.0" prefWidth="200.0" />
+      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
+      <DatePicker id="campoDataAq" fx:id="campoDataAq" layoutX="250.0" layoutY="138.0" prefWidth="200.0" />
+      <DatePicker fx:id="campoDataGar" layoutX="250.0" layoutY="168.0" prefWidth="200.0" />
    </children>
 </Pane>
