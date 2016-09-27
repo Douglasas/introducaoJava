@@ -1,1 +1,2 @@
-
+# Ignore all but this one
+!.gitignore
