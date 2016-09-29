@@ -8,9 +8,7 @@ import java.util.Date;
 public class Manutencao {
     private String descricao;
     private Date data;
-    private float valor;
-
-    
+    private float valor;    
     
     /**
      * @return the descricao

@@ -7,12 +7,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducaojava.visao.Menu">
    <children>
-      <Button fx:id="novoEquipamento" layoutX="159.0" layoutY="50.0" mnemonicParsing="false" onAction="#novoEquipamento" prefWidth="120.0" text="Novo Equipamento" />
-      <Button layoutX="21.0" layoutY="50.0" mnemonicParsing="false" onAction="#novaManutencao" prefWidth="120.0" text="Nova Manutenção" />
       <Label layoutX="46.0" layoutY="10.0" text="Manutenções de Equipamentos">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
+      <Button layoutX="21.0" layoutY="46.0" mnemonicParsing="false" onAction="#novaManutencao" prefWidth="120.0" text="Nova Manutenção" />
+      <Button fx:id="novoEquipamento" layoutX="159.0" layoutY="46.0" mnemonicParsing="false" onAction="#novoEquipamento" prefWidth="120.0" text="Novo Equipamento" />
+      <Button layoutX="99.0" layoutY="81.0" mnemonicParsing="false" onAction="#verEquipamentos" prefWidth="120.0" text="Ver Equipamentos" />
    </children>
 </Pane>

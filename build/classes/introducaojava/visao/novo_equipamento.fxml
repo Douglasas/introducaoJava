@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducaojava.visao.EquipamentoVisao">
    <children>
       <Label layoutX="186.0" layoutY="14.0" text="Novo Equipamento">
@@ -40,6 +39,11 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="campoNome" layoutX="250.0" layoutY="48.0" minHeight="-Infinity" prefWidth="200.0" />
+      <TextField fx:id="campoId" layoutX="250.0" layoutY="78.0" prefWidth="200.0" />
+      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
+      <DatePicker id="campoDataAq" fx:id="campoDataAq" layoutX="250.0" layoutY="138.0" prefWidth="200.0" />
+      <DatePicker fx:id="campoDataGar" layoutX="250.0" layoutY="168.0" prefWidth="200.0" />
       <Button layoutX="377.0" layoutY="219.0" mnemonicParsing="false" onAction="#salvarEquipamento" prefHeight="30.0" prefWidth="73.0" text="Salvar">
          <font>
             <Font size="14.0" />
@@ -50,10 +54,5 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <TextField fx:id="campoNome" layoutX="250.0" layoutY="48.0" minHeight="-Infinity" prefWidth="200.0" />
-      <TextField fx:id="campoId" layoutX="250.0" layoutY="78.0" prefWidth="200.0" />
-      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
-      <DatePicker id="campoDataAq" fx:id="campoDataAq" layoutX="250.0" layoutY="138.0" prefWidth="200.0" />
-      <DatePicker fx:id="campoDataGar" layoutX="250.0" layoutY="168.0" prefWidth="200.0" />
    </children>
 </Pane>

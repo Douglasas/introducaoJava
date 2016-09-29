@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="introducaojava.visao.ListaManutencaoVisao">
+   <children>
+      <Label fx:id="lblTitulo" alignment="CENTER" layoutY="4.0" prefWidth="600.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableManutencoes" editable="true" layoutY="27.0" prefHeight="376.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colData" prefWidth="75.0" text="Data" />
+          <TableColumn fx:id="colValor" prefWidth="75.0" text="Valor (R$)" />
+            <TableColumn fx:id="colDescricao" prefWidth="433.0" text="Descrição" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

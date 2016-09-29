@@ -42,7 +42,14 @@ public class Menu implements Initializable {
         stageAtual.setScene(sceneNovo);
         stageAtual.show();
     }
-    public void verEquipamentos(){
+    public void verEquipamentos(ActionEvent event) throws IOException {
+        Button btnVerEquipamentos = (Button) event.getSource();
+        Scene sceneAtual = btnVerEquipamentos.getScene();
+        Stage stageAtual = (Stage) sceneAtual.getWindow();
         
+        Pane mainNovo = FXMLLoader.load( getClass().getResource("lista_equipamentos.fxml") );
+        Scene sceneNovo = new Scene(mainNovo);
+        stageAtual.setScene(sceneNovo);
+        stageAtual.show();
     }
 }

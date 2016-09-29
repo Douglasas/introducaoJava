@@ -36,8 +36,9 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
+      <ComboBox fx:id="cbxEquipamentos" layoutX="250.0" layoutY="48.0" prefWidth="200.0" />
       <DatePicker fx:id="campoData" layoutX="250.0" layoutY="78.0" prefWidth="200.0" />
+      <TextField fx:id="campoValor" layoutX="250.0" layoutY="108.0" prefWidth="200.0" />
       <TextArea fx:id="txtDescricao" layoutX="43.0" layoutY="160.0" prefHeight="62.0" prefWidth="407.0" />
       <Button layoutX="393.0" layoutY="232.0" mnemonicParsing="false" onAction="#salvar" text="Salvar">
          <font>
@@ -49,6 +50,5 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <ComboBox fx:id="cbxEquipamentos" layoutX="250.0" layoutY="48.0" prefWidth="200.0" />
    </children>
 </Pane>
